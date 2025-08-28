@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夏合宿用マッキン先生クイズ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">夏合宿用マッキン先生クイズ</h1>
+        
+        <div class="question" id="question">マッキン先生クイズを開始しますか？</div>
+        
+        <div class="choices" id="choices" style="display: none;">
+            <button class="choice-btn" onclick="selectAnswer(0)" id="choice0"></button>
+            <button class="choice-btn" onclick="selectAnswer(1)" id="choice1"></button>
+            <button class="choice-btn" onclick="selectAnswer(2)" id="choice2"></button>
+            <button class="choice-btn" onclick="selectAnswer(3)" id="choice3"></button>
+        </div>
+        
+        <button class="btn" onclick="startQuiz()" id="startBtn">開始</button>
+        <button class="btn" onclick="nextQuestion()" id="nextBtn" style="display: none;">次の問題</button>
+        
+        <div class="score" id="score">スコア: 0 / 0</div>
+        <div class="feedback" id="feedback"></div>
+        <div class="result" id="result" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
